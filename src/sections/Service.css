@@ -1,0 +1,70 @@
+.service-component{
+    background: linear-gradient(130deg, #cfe2f5da, #0d6582, #17485e);
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 4rem;
+    text-align: center;
+    border-bottom: 2px solid #ffffff00;
+}
+
+.service-component h1{
+    text-shadow: 1px 4px #000000b3;;
+    font-size:  clamp(2rem, 8vw, 3rem);
+}
+
+.service-component .service-intro{
+    padding: 1rem 2rem;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    text-align: center;
+    line-height: 1.7;
+    color: #ffffffc5;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cards{
+    border: 1px solid #fff;
+}
+
+.cards img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+
+.cards button{
+    background-color: #065cf0d4;
+    border: 1px solid #fff;
+    color: #fff;
+    padding-left: clamp(1rem, 4vw, 2.2rem);
+    padding-right: clamp(1rem, 4vw, 2.2rem);
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+
+}
+
+.cards button:hover {
+    background: white;
+    color: #0d6582;
+    transform: scale(1.05);
+}
+
+.cards p{
+    margin: 0 0.2rem;
+    color: #ffffffb2;
+    line-height: 1.5;
+}

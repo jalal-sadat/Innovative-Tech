@@ -1,0 +1,75 @@
+.contact-component {
+    padding-top: 4rem;
+    background: linear-gradient(135deg, #17485e 0%, #0d6582 100%);
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.contact-component h1{
+    text-align: center;
+    text-shadow: 1px 4px #000000b3;;
+    font-size:  clamp(2rem, 8vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+
+.contact-component form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: clamp(280px, 30vw, 500px);
+    margin: 0 auto;
+    gap: 0.5rem;
+
+}
+
+form input{
+    padding: clamp(0.5rem, 1.5vw, 0.7rem);
+    outline: none;
+    font-size: 1rem;
+
+}
+
+
+form button{
+    padding: clamp(0.5rem, 1.5vw, 0.7rem);
+    color: #fff;
+    font-weight: 600;
+    background-color: #00008b94;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in;
+}
+
+form button:hover{
+    background-color: #00008b5d;
+}
+
+form textarea{
+    min-height: 100px;
+    resize: none;
+    outline: none;
+    padding: clamp(0.5rem, 1.5vw, 0.7rem);
+}
+
+::placeholder{
+    font-size: 1rem;
+    
+}
+
+.error-style{
+    font-size: 12px;
+    color: red;
+    padding-left: 0.5rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}

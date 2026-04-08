@@ -1,0 +1,77 @@
+.hero-component{
+    
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 70%), url('../../assets/images/Background.jpg') no-repeat center/cover fixed;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    line-height: 1;
+    color: #fff;
+    border-bottom: #fffffffd 2px solid;
+
+}
+
+.hero-component h1{
+    font-size: clamp(2.2rem, 10vw, 5rem);
+}
+
+#color-grad{
+    background: linear-gradient(120deg, #eff1f3, #0d6582, #17485e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.hero-component p{
+    font-size: clamp(1rem, 4vw, 2rem);
+    padding-left: 0.4rem;
+}
+
+.hero-component h1,
+.hero-component p{
+    backdrop-filter:contrast(1.5) brightness(2) blur(2px);
+}
+
+
+.button-container{
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    display: flex;
+    gap: clamp(0.8rem, 3vw, 1rem);
+    flex-wrap: wrap;
+}
+
+.button-container button{
+    color: #fff;
+    padding-left: clamp(1rem, 4vw, 2.2rem);
+    padding-right: clamp(1rem, 4vw, 2.2rem);
+    height: 2.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.button-container button:first-child{
+    background-color: #ff9500;
+    border: 1px solid #ff9500;
+}
+.button-container button:last-child{
+    background-color: #353333ed;
+    border: 1px solid #fff;
+}
+
+.button-container button:first-child:hover{
+    background-color: #e08600;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.button-container button:last-child:hover{
+    background-color: #4a4a4aed;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
